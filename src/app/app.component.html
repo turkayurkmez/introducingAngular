@@ -1,5 +1,14 @@
+<app-header-menu></app-header-menu>
 <div class="container">
     <h1> {{name}} kullanıcısının {{title}}</h1>
+
+    <div class="row">
+        <div class="col-8">
+            <input type="text" class="form-control" #itemName>
+            <button class="btn btn-secondary" (click)="addNewItem(itemName.value)">Yeni iş ekle</button>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-8">
 

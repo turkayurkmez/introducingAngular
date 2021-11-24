@@ -29,5 +29,10 @@ export class AppComponent {
     return this.showAllItems ? "Sadece yapılacakları göster":"Tümünü Göster";
   }
 
+  addNewItem(item:string):void{
+     let todoItem = new TodoItem(item,false);
+     this.todoItems.push(todoItem);
+  }
+
 
 }
